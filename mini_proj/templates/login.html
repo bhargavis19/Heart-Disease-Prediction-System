@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(77, 72, 72);
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            width: 350px;
+        }
+
+        .login-container .logo {
+            margin-bottom: 24px;
+        }
+
+        .login-container h2 {
+            margin-bottom: 24px;
+            font-size: 26px;
+            color: #ffffff;
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        .login-container input:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background-color: #00b33f;
+        }
+
+        .sign-up {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .sign-up a {
+            color: #0011ff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .sign-up a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="./assets/images/logo.svg" alt="Company Logo" class="logo" width="200">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="sign-up">
+            <p>Don't have an account?</p>
+            <a href="/signup"><h3>Sign Up</h3></a>
+        </div>
+    </div>
+</body>
+</html>

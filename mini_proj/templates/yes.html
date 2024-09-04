@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+  <title>Heartify - positive</title>
+  <meta name="title" content="Heartify - home">
+  <meta name="description" content="This is a heart disease prediction website">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+  
+  <style>
+    .logout-btn {
+        background-color: #ff5f5f;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .logout-btn:hover {
+        background-color: #d9534f;
+    }
+</style>
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="136" height="46" alt="Heartify home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="136" height="46" alt="Doclab home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="/" class="navbar-link title-md">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/whatweoffer" class="navbar-link title-md">What we offer</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/solutions" class="navbar-link title-md">Solutions</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/faqs" class="navbar-link title-md">FAQs</a>
+          </li>
+
+
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <a href="/predict" class="btn has-before title-md">Predict now</a>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+      
+      <button class="logout-btn" id="logout-button">Logout</button>
+
+<script>
+    document.getElementById("logout-button").addEventListener("click", handleLogout);
+
+    function handleLogout() {
+        // Send a logout request to the server
+        fetch('/logout', {
+            method: 'POST',
+        })
+        .then(response => {
+            if (response.ok) {
+                // Redirect to the login page after successful logout
+                window.location.href = '/login';
+            } else {
+                alert("Logout failed. Please try again.");
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+</script>
+
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-image: url('./assets/images/hero-bg.png')" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle has-before" data-reveal="left">You are positive.</p>
+
+            <h1 class="headline-lg hero-title" data-reveal="left">
+              You will suffer from a <br>
+              heart disease.
+            </h1>
+
+            <div class="hero-card" data-reveal="left">
+
+              <div class="wrapper">
+
+                <div class="input-wrapper title-lg">
+
+  
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <figure class="hero-banner" data-reveal="right">
+            <img src="./assets/positive.png" width="590" height="517" loading="eager" alt="hero banner"
+              class="w-100">
+
+          </figure>
+
+        </div>
+      </section>
+
+
+
+    </article>
+  </main>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+

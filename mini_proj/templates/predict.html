@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(0, 73, 83);  /* Set page background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: rgb(0, 73, 83);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: rgb(0, 73, 83);
+            border-color: rgb(0, 73, 83);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Heart Disease Prediction System</h2>
+        </div>
+        <form action="/predict" method="POST">
+            <h4 class="text-center mt-4">Predict Your Heart Disease</h4>
+            <p class="text-center">Please enter your medical information:</p>
+            <div class="form-group">
+                <label class="form-label">Age (30-100):</label>
+                <input type="number" name="age" class="form-control" min="30" max="100" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Gender:</label>
+                <select name="gender" class="form-control" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label class="form-label">Smokes-Week:</label>
+                    <input type="number" name="cigarettes_per_day" class="form-control" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label class="form-label">Systolic BP:</label>
+                    <input type="number" name="systolic_bp" class="form-control" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label class="form-label">Diastolic BP:</label>
+                    <input type="number" name="diastolic_bp" class="form-control" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label class="form-label">Cholesterol:</label>
+                    <input type="number" name="cholesterol" class="form-control" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label class="form-label">Glucose:</label>
+                    <input type="number" name="glucose" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Hypertension:</label>
+                <select name="hypertension" class="form-control" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label">BP Medication:</label>
+                <select name="bp_medication" class="form-control" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Diabetes:</label>
+                <select name="diabetes" class="form-control" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Get Result</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

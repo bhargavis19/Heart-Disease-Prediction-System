@@ -1,0 +1,145 @@
+{
+    "abis": {
+        "password": "af3aea973a5cc48ced528f49b4b596677abb6bf292964a15b92bf51a5daae6f2",
+        "medical_info": {
+            "male": 1.0,
+            "age": 40.0,
+            "cigsPerDay": 30.0,
+            "BPMeds": 1.0,
+            "prevalentHyp": 1.0,
+            "diabetes": 1.0,
+            "totChol": 89.0,
+            "sysBP": 150.0,
+            "diaBP": 160.0,
+            "glucose": 75.0
+        },
+        "result": 0
+    },
+    "abishek": {
+        "password": "a2a10f2bc52118afbcb33021130015b946baba323778248aa59996458ff939ba",
+        "medical_info": {
+            "male": 1.0,
+            "age": 89.0,
+            "cigsPerDay": 100.0,
+            "BPMeds": 0.0,
+            "prevalentHyp": 1.0,
+            "diabetes": 1.0,
+            "totChol": 332.0,
+            "sysBP": 180.0,
+            "diaBP": 200.0,
+            "glucose": 215.0
+        },
+        "result": 1
+    },
+    "nihal": {
+        "password": "1bbd7b8f45fddbfc3b80f541bfd901742a841d078a070c2b498eb8082fca9941",
+        "medical_info": {
+            "male": 1.0,
+            "age": 89.0,
+            "cigsPerDay": 100.0,
+            "BPMeds": 1.0,
+            "prevalentHyp": 1.0,
+            "diabetes": 1.0,
+            "totChol": 332.0,
+            "sysBP": 220.0,
+            "diaBP": 180.0,
+            "glucose": 215.0
+        },
+        "result": 0
+    },
+    "abishek102": {
+        "password": "96b1f4f5992e486c35b23a50f1f6103a9166da5cfbdb82bdcf41abf8c8cf2858",
+        "medical_info": {},
+        "result": null
+    },
+    "abishek203": {
+        "password": "3c4c2b5467de29f26b608b17549fc99882dc9f54fc61ee40a70721594d8e4371",
+        "medical_info": {
+            "male": 0.0,
+            "age": 67.0,
+            "cigsPerDay": 30.0,
+            "BPMeds": 1.0,
+            "prevalentHyp": 1.0,
+            "diabetes": 0.0,
+            "totChol": 222.0,
+            "sysBP": 220.0,
+            "diaBP": 180.0,
+            "glucose": 198.0
+        },
+        "result": 0
+    },
+    "bhargavi123": {
+        "password": "983487d9c4b7451b0e7d282114470d3a0ad50dc5e554971a4d1cda04acde670b",
+        "medical_info": {
+            "male": 1.0,
+            "age": 76.0,
+            "cigsPerDay": 23.0,
+            "BPMeds": 1.0,
+            "prevalentHyp": 1.0,
+            "diabetes": 1.0,
+            "totChol": 220.0,
+            "sysBP": 180.0,
+            "diaBP": 180.0,
+            "glucose": 198.0
+        },
+        "result": 0
+    },
+    "aditya111": {
+        "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+        "medical_info": {},
+        "result": null
+    },
+    "mohnit123": {
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "medical_info": {
+            "male": 1.0,
+            "age": 45.0,
+            "cigsPerDay": 20.0,
+            "BPMeds": 0.0,
+            "prevalentHyp": 1.0,
+            "diabetes": 0.0,
+            "totChol": 198.0,
+            "sysBP": 180.0,
+            "diaBP": 220.0,
+            "glucose": 200.0
+        },
+        "result": 0
+    },
+    "aditya123": {
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "medical_info": {
+            "male": 1.0,
+            "age": 34.0,
+            "cigsPerDay": 18.0,
+            "BPMeds": 0.0,
+            "prevalentHyp": 1.0,
+            "diabetes": 0.0,
+            "totChol": 180.0,
+            "sysBP": 220.0,
+            "diaBP": 220.0,
+            "glucose": 198.0
+        },
+        "result": 0
+    },
+    "bhargavi12": {
+        "password": "a5d2abd6c089583fa6a3ae3a4c8b721ab379a6fff535ed7a7458f112ad6e7670",
+        "medical_info": {
+            "male": 1.0,
+            "age": 32.0,
+            "cigsPerDay": 34.0,
+            "BPMeds": 1.0,
+            "prevalentHyp": 1.0,
+            "diabetes": 1.0,
+            "totChol": 89.0,
+            "sysBP": 76.0,
+            "diaBP": 48.0,
+            "glucose": 124.0
+        },
+        "result": 0
+    },
+    "bhargaviii": {
+        "password": "5e5aa760dc8013796365a8235094c431b1184a7f8d3897e9cf6432c6d042adc7",
+        "medical_info": {},
+        "result": null
+    }
+}
